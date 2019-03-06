@@ -24,7 +24,7 @@ public class API {
     }
 
     public static API getInstance() {
-        RetrofitManager.setBaseUrl("http://gank.io/api/data/福利/");
+        RetrofitManager.setBaseUrl("http://gank.io");
         if (null == instance) {
             synchronized (API.class) {
                 if (null == instance) {

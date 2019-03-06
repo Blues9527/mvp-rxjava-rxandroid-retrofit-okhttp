@@ -15,6 +15,6 @@ import rx.Observable;
 
 public interface ContractRequest {
 
-    @GET("{page}/{limit}")
+    @GET("/api/data/福利/{page}/{limit}")
     Observable<Entity> getData(@Path("page") int page, @Path("limit") int limit);
 }
