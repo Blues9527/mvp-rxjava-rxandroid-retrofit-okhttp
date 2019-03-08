@@ -12,7 +12,6 @@ import com.example.mvp.model.Entity;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 18:07
  * Email : huajianlan@rastar.com
  */
 

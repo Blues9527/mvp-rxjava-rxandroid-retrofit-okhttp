@@ -5,7 +5,6 @@ import android.util.Log;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 17:50
  * Email : huajianlan@rastar.com
  */
 
@@ -26,14 +25,14 @@ public class HttpException extends RuntimeException {
     private static String getHttpExceptionMessage(ErrorType errorType, String msg) {
         String message;
         switch (errorType) {
-            case PARSE_DATA_ERROR:
-                message = ErrorType.PARSE_DATA_ERROR.getMessage();
+            case TYPE_PARSE_DATA_ERROR:
+                message = ErrorType.TYPE_PARSE_DATA_ERROR.getMessage();
                 break;
-            case SERVER_RETURNS_ERROR:
-                message = ErrorType.SERVER_RETURNS_ERROR.getMessage();
+            case TYPE_SERVER_RETURNS_ERROR:
+                message = ErrorType.TYPE_SERVER_RETURNS_ERROR.getMessage();
                 break;
-            case CONNECT_NETWORK_ERROR:
-                message = ErrorType.CONNECT_NETWORK_ERROR.getMessage();
+            case TYPE_CONNECT_NETWORK_ERROR:
+                message = ErrorType.TYPE_CONNECT_NETWORK_ERROR.getMessage();
                 break;
             default:
                 message = msg;
@@ -43,9 +42,9 @@ public class HttpException extends RuntimeException {
     }
 
     public enum ErrorType {
-        PARSE_DATA_ERROR("数据解析错误"),
-        CONNECT_NETWORK_ERROR("网络连接异常"),
-        SERVER_RETURNS_ERROR("服务器返回错误");
+        TYPE_PARSE_DATA_ERROR("数据解析错误"),
+        TYPE_CONNECT_NETWORK_ERROR("网络连接异常"),
+        TYPE_SERVER_RETURNS_ERROR("服务器返回错误");
 
         String message;
 

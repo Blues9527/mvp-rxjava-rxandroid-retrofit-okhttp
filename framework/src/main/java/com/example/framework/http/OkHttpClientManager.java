@@ -20,7 +20,6 @@ import okhttp3.logging.HttpLoggingInterceptor;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 16:30
  * Email : huajianlan@rastar.com
  */
 

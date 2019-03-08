@@ -16,7 +16,6 @@ import rx.schedulers.Schedulers;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 17:46
  * Email : huajianlan@rastar.com
  */
 
@@ -74,7 +73,7 @@ public class RxUtil {
                         } else if (!TextUtils.isEmpty(HttpResponse.getMsg())) {
                             return Observable.error(new HttpException(HttpResponse.getMsg()));
                         } else {
-                            return Observable.error(new HttpException(HttpException.ErrorType.SERVER_RETURNS_ERROR));
+                            return Observable.error(new HttpException(HttpException.ErrorType.TYPE_SERVER_RETURNS_ERROR));
                         }
                     }
                 });

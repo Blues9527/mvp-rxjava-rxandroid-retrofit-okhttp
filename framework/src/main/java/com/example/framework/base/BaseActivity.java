@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 15:55
  * Email : huajianlan@rastar.com
  * Desc: 所有activity类都需要去继承此基类
  */

@@ -9,12 +9,11 @@ import rx.Observable;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 17:55
  * Email : huajianlan@rastar.com
  */
 
 public interface ContractRequest {
 
-    @GET("/api/data/福利/{page}/{limit}")
+    @GET("/api/data/Android/{page}/{limit}")
     Observable<Entity> getData(@Path("page") int page, @Path("limit") int limit);
 }

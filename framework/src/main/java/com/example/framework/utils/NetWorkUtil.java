@@ -7,7 +7,6 @@ import android.net.NetworkInfo;
 /**
  * User : Blues
  * Date : 2019/3/5
- * Time : 16:49
  * Email : huajianlan@rastar.com
  */
 
